@@ -1,0 +1,193 @@
+@CHARSET "UTF-8";
+
+/****************************************/
+/*			  MAIN ZONE					*/
+/****************************************/
+#main-container {
+	width: 700px;
+	margin: 10px auto;
+	font-size: 1em;
+}
+
+.cv-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 400;
+	/* 	background: rgba(0, 0, 0, 0.7); */
+	background: #000000;
+	opacity: 0.5;
+	display: none;
+}
+/********** Search		**********/
+#cv-container {
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 4px #707070;
+	margin-top: 20px;
+}
+
+#cv-container .keywords span {
+	background-color: #f0f2f8;
+	font-size: 0.95em;
+	margin: 5px;
+	padding: 5px 10px;
+	margin: 5px
+}
+
+.section {
+	padding-bottom: 40px;
+	position: relative;
+	padding: 10px;
+	background: white;
+}
+
+#cv-container .section .title {
+	display: flex;
+	flex-flow: raw nowrap;
+	justify-content: flex-start;
+	border: 1px solid #F1D490;
+	background-color: #FFECBC;
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+#cv-container h2 {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+#cv-container .edit-container {
+	display: flex;
+	flex-grow: 1;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 1em;
+}
+
+#cv-container h2+div .btn-edit {
+	font-size: 1em;
+}
+
+#cv-container h3 {
+	font-size: 1.3em;
+	margin: 0px;
+	font-weight: normal;
+}
+
+#cv-container h3+div {
+	font-size: 0.95em;
+}
+
+#cv-container .date {
+	font-size: 0.9em;
+	color: #9b9b9b;
+}
+
+.langue-container {
+	
+}
+
+.experience {
+	padding-bottom: 20px;
+}
+
+/*************************
+FAVORED EDITING
+****************************/
+#favored-editing {
+	display: none;
+}
+
+.validate-favored {
+	margin-top: 10px;
+	margin-left: 50px;
+	justify-content: flex-end;
+}
+/*************************
+EXPERIENCE & FORMATION  & LANGUAGE EDITING
+****************************/
+#experience-editing, #formation-editing, #language-editing {
+	display: none;
+	/* 	background-color: #f7f7f7; */
+	box-shadow: 1px 1px 4px #707070;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+label {
+	display: inline-block;
+	font-size: 1.1rem;
+}
+
+#experience-title, #experience-company, #formation-diploma, #formation-location {
+	font-size: 0.85rem;
+	width : 500px;
+	height : 20px;
+}
+
+#startDateExp, #endDateExp, #startDateFormation, #endDateFormation, #language-name, #language-level {
+	font-size: 0.85rem;
+	width: 100px;
+	height: 25px;
+}
+
+#experience-editing textarea {
+	width: 100%;
+	resize: none;
+	font-size: 1em;
+}
+
+/***** validate btn experience**/
+#experience-editing .validate-experience {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px;
+	flex-flow: raw nowrap;
+}
+
+.btn-save, .btn-cancel {
+	font-size: 15px;
+	height: 30px;
+	transition: all 0.2s ease-out;
+	width: 100px;
+}
+
+.btn-cancel {
+	margin-left: 10px;
+	border: 1px solid #DCDCDC;
+	background: #EEEEEE;
+}
+
+.btn-cancel:hover {
+	background: #F7F7F7;
+}
+
+.btn-add-experience, .btn-add-formation, .btn-add-language {
+	font-size: 1rem;
+	padding: 15px;
+	color: #686868;
+}
+
+.btn-add-container {
+	display: flex;
+	justify-content: center;
+}
+
+/********************************
+	competence editing
+************/
+#competences-editing {
+	display: none;
+}
+
+.empty-message {
+	display: block;
+	text-align: center;
+	color: #686868;
+}

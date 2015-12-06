@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+/** loader **/
+@-webkit-keyframes r {
+	from { -webkit-transform:rotate(0deg)translateY(-10px);}
+	to { -webkit-transform: rotate(360deg) translateY(-10px);}
+}
+
+/** shake **/
+@-webkit-keyframes shake { 
+	0% {-webkit-transform: translateX(0px);}
+	25%{-webkit-transform:translateX(20px);}
+	50%{-webkit-transform:translateX(0px);}
+	75%{-webkit-transform:translateX(-20px);}
+	100%{-webkit-transform:translateX(0px);}
+}

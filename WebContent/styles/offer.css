@@ -1,0 +1,154 @@
+@CHARSET "UTF-8";
+
+/****************************************/
+/*			  MAIN ZONE					*/
+/****************************************/
+
+.padding-offer{
+	padding : 10px;
+}
+#main-container {
+	width: 700px;
+	margin: 10px auto;
+}
+
+.offer-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 400;
+	/* 	background: rgba(0, 0, 0, 0.7); */
+	background: #000000;
+	opacity: 0.5;
+	display: none;
+}
+
+.section {
+	padding-bottom: 40px;
+	position: relative;
+	padding: 10px;
+	background: white;
+}
+/********** Search		**********/
+.empty-message {
+	display: block;
+	text-align: center;
+	color: #686868;
+}
+
+#offer-container {
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 4px #707070;
+/* 	margin-top: 20px; */
+}
+
+.offer-header {
+	position: relative;
+	font-size: 0.90em;
+	background-color: #f6f6f6;
+	padding: 5px;
+	font-size: 0.90em;
+}
+
+#btn-edit-offer-header, #btn-edit-offer-description,
+	#btn-edit-offer-competences, #btn-edit-offer-contact {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 1.2rem;
+}
+
+#btn-edit-offer-header:hover, #btn-edit-offer-description:hover,
+	#btn-edit-offer-competences:hover, #btn-edit-offer-contact:hover {
+	background-color: inherit;
+}
+
+#btn-edit-offer-header:active, , #btn-edit-offer-description:active,
+	#btn-edit-offer-competences:active, #btn-edit-offer-contact:active {
+	background-color: inherit;
+}
+
+.offer-header div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.subheading {
+	color: #111111;
+}
+
+#offer-container h2 {
+	color: #444;
+	background-color: #C4D3EF;
+	border: 1px solid #839fc4;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	padding: 5px;
+	position: relative;
+}
+
+#offer-container p.para {
+	white-space: pre-wrap;
+	margin-bottom: 50px;
+}
+
+.keywords span {
+	background-color: #f0f2f8;
+	font-size: 0.95em;
+	margin: 5px;
+	padding: 5px 10px;
+	margin: 5px
+}
+
+/*************************************
+Editing offer
+************************************/
+#editing-offer-header, #editing-offer-description,
+	#editing-offer-contact, #competences-editing {
+	display: none;
+}
+
+#editing-offer-header p {
+	font-size: 1.2;
+}
+
+#editing-offer-header p input {
+	font-size: 1.2em;
+}
+
+#datepicker {
+	width: 100px;
+}
+
+.validate-offer-header>*, .validate-offer-description>*,
+	.validate-offer-competences>*, .validate-offer-contact>* {
+	font-size: 0.9rem;
+	height: 30px;
+	width: 100px;
+}
+
+.btn-cancel {
+	margin-left: 10px;
+	border: 1px solid #DCDCDC;
+	background: #EEEEEE;
+}
+
+.btn-cancel:hover {
+	background: #F7F7F7;
+}
+
+#editing-offer-description textarea, #editing-offer-contact textarea {
+	width: 100%;
+	resize: none;
+	font-size: 1em;
+}
+
+#competences-tags {
+	border: none;
+}

@@ -1,0 +1,234 @@
+@CHARSET "UTF-8";
+
+/****************************************/
+/*			  MAIN ZONE					*/
+/****************************************/
+#main-zone {
+	/* 	background-color: #ffffff; */
+	background-color: #ffffff;
+	box-shadow: 1px 1px 4px #707070;
+	width: 700px;
+	margin: 0px auto;
+	margin-top: 50px;
+	position: relative;
+}
+
+.container {
+	margin-top: 50px;
+	overflow: hidden;
+}
+/* Notification area */
+#notification {
+	width: 80%;
+	background: #D2E4CD;
+	border: 1px solid #AFC1AA;
+	text-align: center;
+	color: #434343;
+	margin: 0px auto;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #434343;
+	display: none;
+	padding-top: 10px;
+}
+
+/*------ Settings ------*/
+/*********************/
+h2.settings-title {
+	display: block;
+	color: #947387;
+	font-size: 40px;
+	/* 	background-color: #FCF3F3; */
+	padding: 5px;
+	font-weight: normal;
+	margin: 0px;
+	height: 56px;
+	border-bottom: 2px solid;
+	border-color: #947387;
+	
+	margin-bottom: 20px;
+}
+
+.settings-container {
+	position: relative;
+	padding-bottom: 30px;
+}
+
+.settings-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 400;
+	background: rgba(255, 255, 255, 0.7);
+	display: none;
+}
+/*------ settings group ------*/
+/******************************/
+.settings-group {
+	background-color: #ffffff;
+	overflow: hidden;
+	height: 60px;
+	vertical-align: middle;
+	padding-left: 70px;
+	position: relative;
+	border-bottom: 1px solid;
+	border-color: #E5E5E5;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.6s cubic-bezier(0, .84, .14, .99);
+	-webkit-transform: translateX(30%);
+	-moz-transform: translateX(30%);
+	-ms-transform: translateX(30%);
+	transform: translateX(30%);
+}
+
+/*------ subheading ------*/
+.settings-subheading {
+	display: inline-block;
+	width: 200px;
+	color: #434343;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+/*------ setting content ------*/
+.settings-content, .hide-settings-content {
+	display: inline-block;
+	position: absolute;
+	height: 1em;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	vertical-align: middle;
+	color: #9D9D9D;
+	opacity: 1;
+	visibility: visible;
+	transition: all 2s cubic-bezier(0, .84, .14, .99);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.hide-settings-content {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateX(-70px);
+	-moz-transform: translateX(-70px);
+	-ms-transform: translateX(-70px);
+	transform: translateX(-70px);
+}
+/*------ setting edit ------*/
+.settings-edit, .show-settings-edit {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 117px;
+	display: inline-block;
+	vertical-align: middle;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s cubic-bezier(0, .84, .14, .99);
+	-webkit-transform: translateY(-30px);
+	-moz-transform: translateY(-30px);
+	-ms-transform: translateY(-30px);
+	transform: translateY(-30px);
+}
+
+.show-settings-edit {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.settings-edit-password {
+	height: 145px;
+}
+
+.settings-field {
+	display: block;
+	width: 200px;
+	height: 25px;
+	vertical-align: middle;
+	font-size: 1em;
+	margin: 5px 0px;
+}
+
+/*------ settings button ------*/
+/*******************************/
+
+/* Edit button */
+.btn-edit {
+	display: inline-block;
+	color: #9D9D9D;
+	vertical-align: middle;
+	position: absolute;
+	right: 70px;
+	top: 0px;
+	bottom: 0px;
+	opacity: 1;
+	visibility: visible;
+	transition: all 2s cubic-bezier(0, .84, .14, .99);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.btn-edit:hover {
+	background: none;
+}
+
+.hide-btn-edit {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateX(40px);
+	-moz-transform: translateX(40px);
+	-ms-transform: translateX(40px);
+	transform: translateX(40px);
+}
+
+.icon-pencil {
+	font-size: 1.5em;
+}
+
+.btn-edit:hover {
+	
+}
+/* ok button */
+.btn-save, .btn-cancel {
+	display: inline-block;
+	font-size: 15px;
+	height: 30px;
+	transition: all 0.2s ease-out;
+	background: #C0D0A0;
+	vertical-align: middle;
+}
+
+.btn-save {
+	border: 1px solid #E4CE7A;
+	background: #FFF4C3;
+}
+
+.btn-save:hover {
+	background: #FFFEF8;
+}
+
+.btn-cancel {
+	margin-left: 10px;
+	border: 1px solid #DCDCDC;
+	background: #EEEEEE;
+}
+
+.btn-cancel:hover {
+	background: #F7F7F7;
+}

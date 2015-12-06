@@ -1,0 +1,318 @@
+@CHARSET "UTF-8";
+
+/****************************************/
+/*			  MAIN ZONE					*/
+/****************************************/
+#main-container {
+	width: 660px;
+	margin: 10px auto;
+}
+
+/********** Search		**********/
+#search-container {
+	position: relative;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 4px #707070;
+	padding: 10px;
+}
+
+.search-title {
+	display: block;
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+
+#search-container  P {
+	margin: 20px auto;
+	margin-top: 0px;
+	width: 500px;
+}
+
+#search-container #search {
+	width: 100%;
+	font-size: 1.2em;
+}
+
+#search-container  P .location {
+	margin-left: 20px;
+}
+
+#offers-container {
+	margin-top: 10px;
+}
+
+.bottom-search {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+}
+
+.btn-search {
+	height: 30px;
+	width: 100px;
+	font-size: 1em;
+}
+
+/**************OFFERS ************************/
+.offer {
+	background: #ffffff;
+	margin-top: 10px;
+	box-shadow: 1px 1px 4px #707070;
+	position: relative;
+	z-index: 10;
+	display: block;
+}
+
+.offer .offer-header {
+	display: block;
+	padding: 10px;
+	background-color: #E8EAF6;
+}
+
+.offer .offer-header div {
+	display: flex;
+	flex-flow: raw nowrap;
+	align-items: center;
+}
+
+.offer .offer-title {
+	font-size: 1.2em;
+	color: inherit;
+	text-decoration: inherit;
+	color: #4F648F;
+}
+
+.offer .offer-score {
+	font-size: 1.2em;
+	color: #CB3434;
+	margin-left : 10px;
+}
+
+.offer .offer-header div .date-container {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.offer .offer-header div .date-container .date {
+	font-size: 0.8em;
+	color: #636363;
+}
+
+.location-container {
+	font-size: 0.9em;
+}
+
+.offer-sub-heading {
+	color: #171717;
+}
+
+.offer-content {
+	margin: 10px;
+}
+
+.offer .offer-description {
+	font-size: 0.9em;
+}
+
+.offer .offer-menu {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	color: #636363;
+	position: relative;
+	overflow: hidden;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	transition: all 0.6s cubic-bezier(0, .84, .14, .99);
+}
+
+.offer .offer-menu .btn-detail {
+	width: 135px;
+	height: 30px;
+	color: #636363;
+}
+
+.offer .offer-menu .btn-detail:hover {
+	background: #E4EAF3;
+}
+
+.offer .offer-menu .btn-detail:active {
+	background: #e7f2f9;
+}
+
+.icon-info {
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.offer .offer_buttons {
+	margin-right: 10px;
+}
+
+/*****************************************/
+/***		MY_OFFERS 				******/
+/*****************************************/
+.icon-bin, .icon-group {
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.btn-remove {
+	height: 30px;
+	color: #636363;
+}
+
+.btn-remove:hover {
+	background-color: #F2E3E3;
+}
+
+.btn-remove:active {
+	background-color: #f2eded;
+}
+
+.offer .offer-menu .btn-candidats-p {
+	height: 30px;
+	color: #636363;
+}
+
+/*--------  Post menu-------*/
+.pcd_overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 995;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.offer_confirmation, .show_offer_confirmation {
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	vertical-align: middle;
+	height: 30px;
+	background: #F2E3E3;
+	transition: all 0.6s cubic-bezier(0, .84, .14, .99);
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+}
+
+.show_offer_confirmation {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.offer_confirmation .content_text {
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+	font-size: 15px;
+	/* 	background: #F2E3E3; */
+	color: #575757;
+	vertical-align: middle;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.b_yes {
+	vertical-align: middle;
+	height: 30px;
+	font-size: 13px;
+	background-color: #F8ECCB;
+	margin: 0px;
+	padding: 0px 10px;
+	color: #575757;
+}
+
+.b_yes:hover {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0 1px #CBCBCB inset;
+	margin: 0px;
+	padding: 0px 10px;
+	color: #575757;
+}
+
+.b_no {
+	vertical-align: middle;
+	height: 30px;
+	font-size: 13px;
+	background-color: #F6F6F6;
+	margin: 0px;
+	padding: 0px 10px;
+	color: #575757;
+	margin-right: 10px;
+}
+
+.b_no:hover {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0 1px #CBCBCB inset;
+}
+
+.offer-header.my-offer-header {
+	background-color: #DCEDC8;
+}
+
+
+
+
+.offer-header.my-offer-header .offer-title.my-offer-title {
+	color: #4a634c;
+}
+
+.offer-header.potential-offer-header {
+	background-color: #FAF1F9;
+}
+
+.offer-header.potential-offer-header .offer-title.potential-offer-title {
+	color: #5f3542;
+}
+
+.btn-create-offer {
+	font-size: 1rem;
+	margin-right: auto;
+	display: block;
+	margin-top: 30px;
+	text-align: center;
+	padding: 5px;
+	margin-left: auto;
+	width: 140px;
+}
+
+/***************************/
+/**** potential users *****/
+.offer-menu .expanded {
+	width: 100%;
+}
+
+.potentials-user-container {
+	padding: 10px;
+	background-color: #FCFAE7;
+	display: none;
+}
+
+.potentials-user-container .icon-group {
+	font-size: 1.2em;
+}
+
+.potentials-user-container a {
+	text-decoration: none;
+	color: #444;
+	transition: all 0.2s ease-out;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.potentials-user-container ul li div {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+	width: 30%;
+	color: #9b2020;
+}

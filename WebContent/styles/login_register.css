@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+
+/****************************************/
+/*			  TITLE						*/
+/****************************************/
+.title-container {
+	margin-top: 10px;
+	margin-left: 40px;
+	position: relative;
+}
+
+.title {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	font-size: 100px;
+	margin: auto;
+	height: 1.2em;
+}
+
+/****************************************/
+/*			  LABEL & FIELD				*/
+/****************************************/
+label {
+	display: inline-block;
+	text-align: right;
+}
+
+input.field, select {
+	margin-left: 20px;
+	width: 150px;
+	height: 20px;
+	font-size : 1rem;
+}
+
+.required {
+	color: #DF0101;
+}
+
+/****************************************/
+/*			  BUTTONS					*/
+/****************************************/
+
+/* Login button */
+.btn-login {
+	font-size: 15px;
+	margin-bottom: 10px;
+	background: #CBDDC6;
+	width: 150px;
+	padding: 10px 0px;
+}
+
+
+.btn-login:hover {
+	background: #DFECDC;
+}
+
+.btn-login:active {
+	background: #E1E1E1;
+}
+
+/* Register button */
+.btn-register {
+	font-size: 20px;
+	position: absolute;
+	width: 150px;
+	bottom: 20px;
+	left: 20px;
+	padding: 15px 15px;
+	background: #FFD996;
+	text-align: center;
+	border: 1px solid #FEC260;
+}
+
+.btn-register:hover {
+	background: #FFE9C2;
+}
+
+.btn-register:active {
+	background: #E1E1E1;
+}
+
+/****************************************/
+/*				  LOGIN PAGE			*/
+/****************************************/
+.login-zone {
+	background-color: #ffffff;
+	width: 500px;
+	margin: auto;
+	margin-top: 15%;
+	box-shadow: 1px 1px 12px #555;
+}
+
+
+.login-container {
+	padding-top: 30px;
+	width: 350px;
+	margin: auto;
+	text-align: center;
+	transition: all 0.6s cubic-bezier(0, .84, .14, .99);
+	-webkit-transform: translateX(30%);
+	-moz-transform: translateX(30%);
+	-ms-transform: translateX(30%);
+	transform: translateX(30%);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.login-container label {
+	width: 140px;
+}
+
+/****************************************/
+/*			  REGISTER PAGE				*/
+/****************************************/
+.register-zone {
+	background-color: #ffffff;
+	width: 500px;
+	margin: auto;
+	margin-top: 15%;
+	box-shadow: 1px 1px 12px #555;
+	overflow: hidden;
+}
+
+.register-container {
+	padding-top: 5%;
+	width: 350px;
+	margin: auto;
+	text-align: center;
+	transition: all 0.6s cubic-bezier(0, .84, .14, .99);
+	-webkit-transform: translateX(30%);
+	-moz-transform: translateX(30%);
+	-ms-transform: translateX(30%);
+	transform: translateX(30%);
+	visibility: hidden;
+}
+
+.register-container label {
+	width: 140px;
+}
+
+.register-container .btn-register {
+	font-size: 15px;
+	position: relative;
+	padding: 10px 0px;
+	border: none;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 10px;
+}
+
+body>.btn-login {
+	font-size: 20px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	padding: 15px 15px;
+	text-align: center;
+	border: 1px solid #8BB280;
+	margin-bottom: 0px;
+}
